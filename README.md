@@ -32,3 +32,20 @@ Além disso a forma rapida que os processos são operados, onde o servidor centr
 No controle de versionamento é possível proteger o código-fonte do sistema e por meio dos registros no histórico pode-se verificar os erros ocorridos e os ataques sofridos. Podemos dizer que o versionamento de software é um processo de controle de versões, o que é ajustado através de códigos., permitindo que os programadores tenham mais visibilidade e consigam verificar as mudanças feitas entre uma versão e outra.
 
 .A importância principal do versionamento de software é oferecer condições para realizar o trabalho em equipe, garantindo que todos da equipe possam ter acesso aos arquivos do projeto e permitindo identificar o que cada participante da equipe está fazendo e quais as mudanças que foram feitas. Além disso, cada programador é responsável por uma certa função, podendo ocorrer que mais que um profissional poderá fazer alterações no mesmo arquivo, acarretando problemas.O versionamento de software, permite criar pequenas versões internas, onde cada programador pode fazer suas próprias alterações, pois a versão é isolada, sem problemas. E no final o programador poderá incluir as alterações na verão comum, ficando disponível para todos. Caso ocorra erro, o versionamneto permite jogar as alterações para a versão anterior, onde não havia mudanças, podendo verificar onde ocorreu e o que gerou o problema e realizar as correção imediatamente e lançar nova versão.
+
+
+6. CITE AO MENOS 3 FERRAMENTAS DE CONTROLE DE VERSÃO E FAÇA UM BREVE DETALHAMENTO DE CADA UMA?
+
+Temos diferentes ferramentas no mercado sendo usado, citamos aqui as mais melhores e mais usadas, como: Subversion, Mercurial, e a CVS.
+
+1 - Subversion
+
+A ferramenta de controle de versão de software Subversion é muito usada no meio corporativo. É rápida na execução das funcões do sistema e é simples de ser empregada. Por isso é fácil e rápido aprender e ter conhecimento básico de versão de software e dessa forma é possível e fácil realizar comandos na ferramenta. Existem algumas criticas a ferramenta Subversion em relação a eficacia do software.Mas tudo foi resolvido nas ultimas versões considerando todas as criticas. Assim sendo, o Subversion é uma ferramenta de controle de versão centralizada. Não é indicado para todas equipes, apenas para as menores e que estão no mesmo espaço físico.
+
+2- Mercurial
+
+Já a ferramenta de controle de versão de software Mercurial é usada e indicada para empresas de porte maior como o Facebook e Google. É eficiente, desempenha as funções básicas com qualidade. É rápido na execução dos comando e funciona em equipes maiores, onde a equipe não está toda no mesmo local, por ser uma ferramenta de controle de versão distribuída. Não possui muitas desvantagens.É mais complexa comparada a Subversion, mas não é difícil a equipe aprender e além disso contem medidas de segurança para que não ocorra erros.
+
+3- CVS
+
+A ferramentas de controle de software CVS é a mais antiga existente no mercado. A sua primeira versão foi lançada em 1968, sendo a sua maior desvantagem o uso de uma tecnologia antiga, mas mesmo assim é muito usada pelas equipe de desenvolvedores. É fácil para operar, e as equipes aprendem rápido como usar as funções da CVS e com eficiência. No entanto, é a menos usada no mercado atual, principalmente por ser a mais antiga.
