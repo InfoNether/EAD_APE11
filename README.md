@@ -7,6 +7,7 @@ O Git é um sistema opens-source de controle de versão de código, usado pela m
 
 Com o mesmo pode-se criar todo tipo de histórico de alterações no código do projeto, podendo com facilidade voltar a qualquer ponto do mesmo e assim saber como o código se encontrava naquela data.
 
+<<<<<<< HEAD
 Por meio do Git podemos rastrear as alterações, pois ele é um software de linha de comando, incluir novos arquivos, também podemos modificar os arquivos e se a alteração esteja errada, podemos voltar ao inicio. Assim sendo, o Git está instalado no sistema operacional, ficando a disposição para ser usado via terminal. O Git é um projeto de código aberto e é fácil verificar a qualidade do software.
 
 
@@ -49,3 +50,11 @@ Já a ferramenta de controle de versão de software Mercurial é usada e indicad
 3- CVS
 
 A ferramentas de controle de software CVS é a mais antiga existente no mercado. A sua primeira versão foi lançada em 1968, sendo a sua maior desvantagem o uso de uma tecnologia antiga, mas mesmo assim é muito usada pelas equipe de desenvolvedores. É fácil para operar, e as equipes aprendem rápido como usar as funções da CVS e com eficiência. No entanto, é a menos usada no mercado atual, principalmente por ser a mais antiga.
+
+
+REFERENCIA
+
+https://blog.rocketseat.com.br/iniciando-com-git-github/ 
+https://gaea.com.br/sabe-fazer-versionamento-de-software/ 
+https://www.ipsense.com.br/blog/entenda-a-importancia-do-versionamento-de-software/
+https://gaea.com.br/versionamento-de-software/
