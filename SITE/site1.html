@@ -1,0 +1,119 @@
+<!doctype html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Simple Theme</title>
+			<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+		</head>
+		<body>
+			<div class="container">
+	  			<header>
+					<div class="primary_header">
+		  				<h1 class="title">APE 11</h1>
+					</div>
+					<nav class="secondary_header" id="menu">
+		  				<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="site1.html">COMANDOS E SUAS FINALIDADES SEM O USO DO FLOW</a></li>
+							<li><a href="site2.html">COMANDOS E SUAS FINALIDADES COM O USO DO FLOW</a></li>
+		  				</ul>
+					</nav>
+	  			</header>
+	  			<section>
+					<h2 class="noDisplay">Main Content</h2>
+					<article class="left_article">
+						<h3>Comandos e suas Finalidades com o sem do Flow</h3>
+						<h3>Iniciando um Repositório</h3>
+							<p>Todo repositorio Git armazena as informações dentro de uma pasta oculta chamada “/.git”. Para que os arquivos de uma pasta possam ser versionados pelo Git, é preciso iniciar o repositório. Basta executar o comando abaixo:</p>
+							<p>$ git init</p>
+						<h3>Apagando um repositório</h3>
+							<p>Há momentos em que não queremos apagar nossos arquivos, mas queremos remover as informações sobre aquele repositório criado com o $ git init (talvez criar um repositório novo com os mesmos arquivos).
+								Para isso não usamos o Git. Lembre-se que um repositório Git armazena as informações dentro de uma pasta oculta chamada /.git. Então basta apagar esta pasta oculta que o seu atual diretório deixará de ser um repositório.</p>
+							<p>$ rm -rf .git</p>
+						<h3>Listando Arquivos Modificados</h3>
+							<p>Esse comando indica o estado do seu repositório. Em outras palavras, ele vai listar todos os arquivos que foram modificados desde o seu último commit.</p>
+							<p>$ git status</p>
+						<h3>Desfazendo Alterações</h3>
+							<p>Poderíamos ter um post inteiro apenas falando sobre como desfazer alterações no Git, já que há vários cenários possíveis. Mas vamos resumir os principais:</p>
+							<h3>Arquivos não monitorados</h3>
+								<p>Se o arquivo foi modificado mas você ainda não executou git add, um simples git checkout removerá as alterações, deixando o arquivo como ele estava no último commit. Passe o nome do arquivo a ter as alterações desfeitas ou . para desfazer as alterações em todos os arquivos modificados. Muito útil se você está apenas experimentando um código mas não quer que ele seja salvo.</p>
+								<p>git checkout</p>
+								<p>Esse comando não apaga novos arquivos. Para apagar novos arquivos que ainda não foram adicionados ao Stage, execute:</p>
+								<p>git clean -df</p>
+							<h3>Removendo arquivos do Stage</h3>
+								<p>Se você executou git add e quer desfazer, use o reset.</p>
+								<p>git reset</p>
+								<p>Para desfazer as modificações, após o reset use o checkout ou clean mostrados anteriormente.</p>
+							<h3>Desfazendo o último commit</h3>
+							<p>Caso você tenha feito alterações e já tenha chegado a realizar um commit, para desfazer é necessário usar o revert.</p>
+							<p>git revert HEAD</p>
+							<p>Será criado um novo commit indicando que o último commit foi desfeito. Esse comando apaga novos arquivos.</p>	
+						<h3>Renomear Commit</h3>
+							<p>Escreveu algo errado no último commit? Esse comando te permite renomear a mensagem do último commit feito:</p>
+							<p>$ git commit --amend</p>
+						<h3></h3>
+							<p>Sempre é bom não trabalhar apenas na master para evitar problemas e ter um projeto mais flexível.</p>
+							<h3>Listando Branches</h3>
+								<p>Esse comando lista todas as branches presentes no repositório do seu computador.</p>
+								<p>$ git branch</p>
+								<p>Caso você queira que ele liste também as branches que estão no repositório remoto, adicione -a:</p>
+								<p>$ git branch -a</p>
+								<h3>Indo para outra branch</h3>
+									<p>Para mudar para uma outra branch basta usar o comando checkout, passando o nome da branch.</p>
+									<P>$ git checkout minha-branch</P>
+									<p>Se você adicionar -b, uma nova branch será criada.</p>
+									<p>$ git checkout -b minha-nova-branch</p>
+									<h3>Excluindo branches</h3>
+										<p>Para excluir uma branch local basta executar o comando branch com -d ou -D, passando o nome da branch que você quer apagar.</p>
+										<p>git branch -d nome-da-branch</p>
+										<p>git branch -D nome-da-branch</p>
+										<p>A opção -d é mais segura, pois ela só apaga a branch se você já tiver feito merge ou enviado as alterações para seu repositório remoto, evitando perda de código.</p>
+										<p>A opção -D ignora o estado da sua branch, forçando a sua remoção.</p>
+										<p>Esse comando apaga apenas a branch local, não removendo branches remotas.</p>
+									<h3>Renomeando branches</h3>
+										<p>Para renomear a sua atual branch local, execute o comando branch com a opção -m, passando o novo nome.</p>
+										<p>git branch -m novo-nome-da-branch</p>
+										<p>Se você estiver em uma branch e quiser renomear outra, você deve passar primeiro o nome atual da branch que quer renomear:</p>
+										<p>git branch -m nome-atual novo-nome</p>
+								<h3>Visualizando o Histórico de Commits</h3>
+									<p>Para visualizar o histórico de commits basta usar o seguinte comando:</p>
+									<p>$ git log</p>
+									<h3>Histórico de um ou mais arquivos</h3>
+										<p>$ git log -p meus-arquivos</p>
+										<p>Você pode indicar nomes de arquivo ou de um diretório para ver o histórico apenas de um grupo de arquivos ao invés do projeto inteiro</p>
+									<h3>Histórico de um autor</h3>
+										<p>Mostra o histórico de commits feitos por uma única pessoa</p>
+										<p>$ git log --autor=nome-autor</p>
+									<h3>Histórico por Data</h3>
+										<p>Mostra o histórico de commits feitos antes ou após uma data:</p>
+										<p>$ git log --after="MMM DD YYYY"</p>
+										<p>$ git log --before="MMM DD YYYY"</p>
+									<h3>Histórico Baseado em uma Mensagem</h3>
+										<p>Mostra o histórico de commits filtrado por uma mensagem</p>
+										<p>$ git log --grep produtos</p>
+								<h3>Salvando modificações em um Stash</h3>
+									<p>Simplesmente execute o comando stash</p>
+									<p>$ git stash</p>
+									<p>Você ainda pode colocar um nome nesse stash:</p>
+									<p>$ git stash push -m meu-novo-stash</p>
+									<h3>Listando Stashes</h3>
+										<p>Você pode fazer vários stashes. Para listá-los, execute o comando:</p>
+										<p>$ git stash list</p>
+									<h3>Recuperando modificações</h3>
+										<p>Quando nós recuperamos alterações de um stash, ele continua guardado. Para apagá-lo da pilha, execute o comando drop junto ao nome do stash que você quer remover:</p>
+										<p>$ git stash drop stash@{5}</p>
+										<p>Se você quiser recuperar o código de um stash e já apagá-lo, pode usar o comando pop no lugar do apply.</p>
+								<h3>Juntando alguns pedaços do trabalho</h3>
+									<p>Pode ser que você esteja trabalhando em uma branch e queira fazer o merge do código dela com outra branch, mas não quer juntar o trabalho inteiro, apenas um commit específico. Isso é possível com o Cherry Pick.</p>
+									<p>git cherry-pick id-do-commit</p>
+						</article>
+					<aside class="right_article"> </aside>
+	  			</section>
+				<div class="row blockDisplay">
+					<div class="column_half right_half"> </div>
+	  			</div>
+			</div>
+		</body>
+	</html>

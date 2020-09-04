@@ -1,0 +1,71 @@
+<!doctype html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Simple Theme</title>
+			<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+		</head>
+		<body>
+			<div class="container">
+				<header>
+					<div class="primary_header">
+				  		<h1 class="title">APE 11</h1>
+					</div>
+					<nav class="secondary_header" id="menu">
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="site1.html">COMANDOS E SUAS FINALIDADES SEM O USO DO FLOW</a></li>
+							<li><a href="site2.html">COMANDOS E SUAS FINALIDADES COM O USO DO FLOW</a></li>
+				 		</ul>
+					</nav>
+				</header>
+			  	<section>
+					<h2 class="noDisplay">Main Content</h2>
+					<article class="left_article">
+						<h3>Comandos e suas Finalidades com o uso do Flow</h3>
+						<h3>Inicialização</h3>
+							<p>Comece o uso do git-flow fazendo sua inicialização dentro de um repositório git existente:</p>
+							<p>git flow init</p>
+						<h3>Funcionalidades</h3>
+							<h3>Começar uma nova funcionalidade</h3>
+							<p>O desenvolvimento de novas funcionalidades começa no branch 'develop'.</p>
+							<p>git flow feature start MYFEATURE</p>
+							<p>Esse comando cria um novo branch da funcionalidade baseado no 'develop' e alterna para ele</p>
+						<h3>Finalizar uma funcionalidade</h3>
+							<p>Finaliza o desenvolvimento de uma funcionalidade. Esse comando faz o seguinte</p>
+							<p>git flow feature finish MYFEATURE</p>
+						<h3>Publicar uma funcionalidade</h3>
+							<p>Você está desenvolvendo uma funcionalidade colaborativamente? Publique uma funcionalidade para o servidor remoto, assim ela pode ser utilizada por outros usuários.</p>
+							<p>git flow feature publish MYFEATURE</p>
+						<h3>Obter uma funcionalidade publicada</h3>
+							<p>Obtenha uma funcionalidade publicada por outro usuário e acompanhe as alterações remotas.</p>
+							<p>git flow feature pull MYFEATURE</p>
+						<h3>Criar uma versão</h3>
+						<h3>Começar uma versão</h3>
+							<p>Para começar uma versão, use o comando git flow release. Ele cria um branch da versão baseado no branch 'develop'.</p>  
+							<p>git flow release start RELEASE [BASE]</p>
+							<p>Você pode opcionalmente fornecer um hash sha-1 do commit [BASE] de onde começar a versão. O commit precisa estar no branch 'develop'</p>
+							<p>É sensato publicar o branch da versão depois de criá-lo, para permitir commits por outros desenvolvedores. É semelhante à publicação de uma funcionalidade com o comando:</p>
+							<p>git flow release publish RELEASE</p>
+						<h3>Finalizar uma versão</h3>
+							<p>A finalização de uma versão é um dos grandes passos na ramificação/branching do git. Ele executa várias ações:</p>
+							<p>git flow release finish RELEASE</p>
+						<h3>Hotfixes</h3>
+						<h3>git flow hotfix start</h3>
+							<p>Assim como os outros comandos do git flow, um hotfix inicia com</p>
+							<p>git flow hotfix start RELEASE</p>
+							<p>O argumento release nesse caso marca a versão defeituosa na produção</p>
+						<h3>Finalizar um hotfix</h3>
+							<p>Ao finalizar um hotfix ele é mesclado tanto no develop quanto no master. Além disso, o merge no master é etiquetado.</p>
+							<p>git flow hotfix finish RELEASE</p>	
+					</article>
+					<aside class="right_article"> </aside>
+			  	</section>
+				<div class="row blockDisplay">
+					<div class="column_half right_half"> </div>
+			  	</div>
+			</div>
+		</body>
+	</html>
